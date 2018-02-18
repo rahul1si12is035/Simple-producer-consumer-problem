@@ -1,0 +1,174 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body, html {
+	height: 100%;
+}
+
+/*HEADER STYLE*/
+header {
+	width: 100%;
+	height: 60px;
+	background-color: #90c1e0;
+	box-shadow: inset 0 -8px 23px -6px #0000CD;
+	border: 2px solid #99a0a4;
+}
+
+header h1 {
+	font-size: 18px;
+	text-align: center;
+	padding: 5px;
+	line-height: 45px;
+	color: #fff;
+}
+
+/*SECTION STYLE*/
+section {
+	display: flex;
+	height: 76vh;
+}
+
+/*LEFT PANEL SECTION STYLE*/
+section .left-panel {
+	width: 25%;
+	border: 2px solid blue;
+	border-bottom: none;
+	z-index: 5;
+}
+section .left-panel .left-panel-item {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	color: #000;
+	height: 100%;
+	align-items: center;
+    justify-content: center
+}
+section .left-panel .left-panel-item .produce {
+	margin-bottom: 10px;
+	width: 60%;
+	border: 2px solid blue;
+	border-radius: 20px;
+	padding: 12px 18px;
+	font-weight: 800;
+	font-size: 24px;
+}
+
+section .left-panel .left-panel-item .produce:hover {
+	background-color: blue;
+	color: #fff;
+	transition: background 1s ease-in;
+	cursor: pointer;
+}
+
+section .left-panel .left-panel-item .consume {
+	margin-top: 10px;
+	width: 60%;
+	border: 2px solid blue;
+	border-radius: 20px;
+	padding: 12px 18px;
+	font-weight: 800;
+	font-size: 24px;
+}
+
+section .left-panel .left-panel-item .consume:hover {
+	background-color: blue;
+	color: #fff;
+	transition: background 1s ease-in;
+	cursor: pointer;
+}
+
+/*RIGHT PANEL SECTION STYLE*/
+section .right-panel-1 {
+	width: 37.5%;
+}
+
+section .right-panel-2 {
+	width: 37.5%;
+}
+
+.content {
+	width: 80%;
+	margin: 40px 10%;
+	height: 80%;
+}
+
+.content p {
+	text-align: center;
+	font-weight: 800;
+	font-size: 24px;
+}
+
+section .right-panel-1 .content .content-produce-item {
+	margin-top: 20px;
+	height: 100%;
+	overflow-y:auto;
+	border: 2px solid blue;
+	padding-left: 5vw;
+	padding-top: 4vh;
+	font-weight: bold;
+	font-size: 26px;
+	border-radius: 20px;
+}
+
+section .right-panel-2 .content .content-consume-item {
+	margin-top: 20px;
+	height: 100%;
+	border: 2px solid blue;
+	overflow-y:auto;
+	padding-left: 5vw;
+	padding-top: 4vh;
+	font-weight: bold;
+	font-size: 26px;
+	border-radius: 20px;
+}
+
+/*FOOTER STYLE*/
+footer {
+	height: 14.9vh;
+	width: 100%;
+	border: 2px solid blue;
+	border-bottom: none;
+}
+
+footer .buffer {
+	display: flex;
+	height: 10vh;
+	margin-top: 13px;
+	margin: 13px 10px 0 10px;
+}
+
+.box-1 {
+	width: 10%;
+	margin: 0 5px;
+	border: 2px solid blue;
+	text-align: center;
+	line-height: 10vh;
+	border-radius: 20px;
+	font-weight: bold;
+	font-size: 26px;
+}
+
+@media only screen and (max-width: 720px) {
+
+	section .left-panel .left-panel-item .produce {
+		font-size: 15px;
+		padding-left: 5px;
+		f/*ont-weight: normal;*/
+	}
+
+	section .left-panel .left-panel-item .consume {
+		font-size: 15px;
+		padding-left: 5px;
+		/*font-weight: normal;*/	
+	}
+
+	.content {
+		width: 80%;
+		margin: 40px 10%;
+		height: 70%;
+	}
+
+}
